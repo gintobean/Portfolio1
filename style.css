@@ -1,0 +1,165 @@
+/* general */
+body {
+  overflow-x: hidden;
+  background-color: #f5f7f7;
+}
+
+label {
+  display: block !important;
+}
+
+.subheading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+.midheading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.bolded {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+}
+
+/* navbar */
+.navi {
+  background-color: #f5f7f7;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+}
+
+.title {
+  height: 100%;
+  margin-left: 50px;
+}
+
+.menu-logo {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  color: #000000;
+}
+
+.navbarlist {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #000000;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  justify-content: right;
+  position: relative;
+  right: 100px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #000000;
+  margin: auto 30px;
+}
+
+/* main */
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.vid {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -100;
+  filter: brightness(50%);
+}
+
+.main-overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.main-logo {
+  margin: auto
+}
+
+/* about  */
+#about {
+  background-color: #f5f7f7;
+  width: 100vw;
+}
+
+.about-content {
+  text-align: left;
+  width: 35%;
+  margin-right: 50px;
+
+}
+
+.gear {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.portrait {
+  text-align: center;
+  /* height: 100%; */
+  width: 50%;
+  margin-left: 50px;
+}
+
+.portrait-image {
+  filter: grayscale(0.5);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right: black 20px solid;
+}
+
+.arrow-link {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.arrow-message {
+  margin-left: 30px;
+  height: 100%;
+}

@@ -1,0 +1,38 @@
+.navi {
+  position: relative;
+}
+
+.gallery-container {
+  background-color: #f5f7f7;
+  text-align: center;
+}
+
+.gallery-quote {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  width: 100vw;
+}
+
+.gallery-column-left {
+  width: 50%;
+  padding: 2% 1.5% 5% 20%;
+}
+.gallery-column-right {
+  width: 50%;
+  padding: 2% 20% 5% 1.5%;
+}
+
+.gallery-image {
+  width: 100%;
+  padding: 5% 0;
+}
+
+.bw {
+filter: grayscale(0.5);
+}

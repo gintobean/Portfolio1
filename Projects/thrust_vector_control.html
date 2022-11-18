@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>philip's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/afcee6ebc7.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <nav class="navi">
+      <a class="title" href="../index.html">
+        <img class="menu-logo" src="../Logos/portfoliologobl.svg" alt="philip ng">
+      </a>
+      <ul class="navbarlist">
+        <li class="navitem">
+          <a class="navlink" aria-current="page" href="../index.html">home</a>
+        </li>
+        <li class="navitem">
+          <a class="navlink" aria-current="page" href="../projects.html">portfolio</a>
+        </li>
+        <li class="navitem">
+          <a class="navlink" aria-current="page" href="../gallery.html">gallery</a>
+        </li>
+        <li class="navitem">
+          <a class="navlink" aria-current="page" href="../about.html">about</a>
+        </li>
+        <li class="navitem">
+          <a class="navlink" aria-current="page" href="../contact.html">contact</a>
+        </li>
+
+        <!-- <a class="bar navitem">
+            <i class="icon fas fa-bars fa-3x"></i>
+          </a>
+          <a class="close navitem" href="#">
+            <i class="fas fa-times fa-4x"></i>
+          </a> -->
+      </ul>
+    </nav>
+
+
+    <section id="content">
+      <div class="project-title">
+        <h2>Thrust Vectoring System for H-Class Rocket</h2>
+      </div>
+      <div class="image-wrapper-full">
+        <img class="image cropped" src="Images/tvc.jpg" alt="">
+      </div>
+
+      <div class="section intro">
+        <div class="header-wrapper">
+          <h3 class="header">Introduction</h3>
+        </div>
+        <div class="content-wrapper">
+          <p class= "content">
+              This project involved the integration and control of mechanical and electrical systems. O
+              ur team strived to build a thrust vector control system that was robust and reusable,
+              and could be mass-manufactured. Many physical and software tests had to be run to optimize rocket stability,
+              considering rockets launch at speeds of over 300m/s. Thus the design allows for sensitive real-time calculations and
+              a sizable amount of torque to change the rocket’s trajectory in mid-flight.
+          </p>
+        </div>
+      </div>
+
+      <div class="section initial-concept">
+        <div class="header-wrapper">
+          <h3 class="header">Initial Concept</h3>
+        </div>
+        <div class="content-wrapper">
+          <p class= "content">
+              Inspired by the spaceX Falcon 9 launch, I set off to design and prototype my own thrust vectoring
+              system for model rockets. The first design allowed the engine mount to rotate via two universal joints
+              and two longerons attached on the body tube. However, this design didn’t seem stable enough, so we decided
+              to use a ball joint to hold the mount in place and ensure larger and smoother range of motion.
+              Servo motors rotated each longeron.
+          </p>
+
+          <p class="content">The Ackermann criteria is shown below:</p>
+        </div>
+      </div>
+
+      <div class="image-wrapper-full">
+        <img class="image" src="Images/criteria.jpeg" alt="">
+      </div>
+
+      <div class="section prototyping">
+        <div class="header-wrapper">
+          <h3 class= "header">Prototype</h3>
+        </div>
+        <div class="content-wrapper pic-right">
+          <div class="image-wrapper-left">
+            <img class = "image" src="Images/Ackermann.jpg" alt="">
+          </div>
+          <p class= "content content-right">
+          I modeled the prototype via solidworks and created several animations
+          to spatially understand the movement. Kinematic analysis was done via matlab to find
+          how rotating the servo motors would change the roll and pitch of the engine mount.
+          This allowed us to draft the skeleton code for the P&ID control system, which would allow the flight
+          computer to adjust the engine mount tilt in real time.
+          </p>
+
+        </div>
+        <div class="content-wrapper">
+          <div class="content">
+          <br />
+            After calculating optimal dimensions for the 6-bar mechanism, I utilized solidworks to model the mechanism and print parts.
+            The full print was in PLA. However, the grooves on the PLA presented the printed gears from smoothly meshing, so I purchased acrylic
+            gears of the same dimensions. The result is pictured below: The final prototype consisted of acrylic gears and PLA linkages.
+            An arm was added to the pinion to allow the attachment of a universal joint and steering wheel. This steering mechanism will be part
+            of a larger electric car project.
+          </div>
+        </div>
+      </div>
+
+      <div class="section gallery">
+        <div class="header-wrapper">
+          <h3 class="header">Gallery</h3>
+        </div>
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="image" src="Images/tvc2.jpeg" alt="">
+            </div>
+            <div class="col-lg-4">
+              <img class="image" src="Images/tvc3.jpeg" alt="">
+            </div>
+            <div class="col-lg-4">
+              <img class="image" src="Images/tvc4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section conclusion">
+        <div class="header-wrapper">
+          <h3 class="header">Conclusion</h3>
+        </div>
+        <div class="content-wrapper">
+          <p class= "content">In reality, most steering mechanisms will not function on acrylic and PLA due to high friction and thus heavy wear. However, this project provides insight on various, more complicated mechanisms that can be used in place of simpler, less accurate mechanisms, possibly eliminating the need for variable steering and thus reducing manufacturing costs.  </p>
+        </div>
+      </div>
+    </section>

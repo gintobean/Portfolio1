@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <meta charset="utf-8">
+  <title>philip's portfolio</title>
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/afcee6ebc7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navi">
+    <a class="title" href="index.html">
+      <img class="menu-logo" src="Logos/portfoliologobl.svg" alt="philip ng">
+    </a>
+    <ul class="navbarlist">
+      <li class="navitem">
+        <a class="navlink" aria-current="page" href="index.html">home</a>
+      </li>
+      <li class="navitem">
+        <a class="navlink" aria-current="page" href="projects.html">portfolio</a>
+      </li>
+      <li class="navitem">
+        <a class="navlink" aria-current="page" href="gallery.html">gallery</a>
+      </li>
+      <li class="navitem">
+        <a class="navlink" aria-current="page" href="about.html">about</a>
+      </li>
+      <li class="navitem">
+        <a class="navlink" aria-current="page" href="contact.html">contact</a>
+      </li>
+
+      <!-- <a class="bar navitem">
+          <i class="icon fas fa-bars fa-3x"></i>
+        </a>
+        <a class="close navitem" href="#">
+          <i class="fas fa-times fa-4x"></i>
+        </a> -->
+    </ul>
+  </nav>
+
+  <div class="about-container container-fluid">
+    <div class="about-wrapper-top">
+      <div class="about-words-top">
+        <h2 class="heading">ABOUT</h2>
+        <p class="description">Hello! My name is Philip Ng and I’m a third year Mechanical Engineering major. I was raised in the heart of Silicon Valley with an interest in all things STEM. Through picture books my parents bought me, I developed an interest in cars, robots, rockets, and planes, or anything that could move automatically. I frequently dabbled in the arts, drawing renditions of futuristic infrastructure and rocket-powered concept cars. Since I was not yet educated on the complex    physics involved in everything, I dreamed about the future through art.
+        </p>
+        <p class="description">Fast forward many years, I arrived at UCLA. For two years, I was an active member of Rocket Project and Bruin Racing. At Rocket Project, I developed the oxidant fill system for the Prometheus hybrid-propellant rocket, and used FEA to optimize the geometry of a boattail to reduce drag. At Bruin Racing, I programmed a fuel level sensor to control the amount of fuel injected. I cherished those experiences, as they not only increased my experience in mechanical design, but also fostered teamwork.</p>
+        <!-- <p class="description">Some of the skills I've learned over the years:</p>
+        <ul class="description">
+          <li>A</li>
+          <li>A</li>
+          <li>A</li>
+        </ul>
+        <p class="description">Here's where I went to school:</p>
+        <ul class="description">
+          <li>A</li>
+          <li>A</li>
+        </ul> -->
+        <!-- <p class="description">Some really cool call to action Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+      </div>
+      <div class="about-picture">
+        <img class= "about-pic" src="Images/about.jpg" alt="me">
+      </div>
+    </div>
+  </div>
+  <div class="about-wrapper">
+    <div class="about-words">
+      <p class="description">Now I am a mechanical design engineer for Bruinbot, a team under DevX that is designing an alternative to the Starship robots roaming campus. I'm in charge of the exterior design, automated steering, and suspension of the vehicle. So far, we have designed the skeleton of the vehicle and are now working on manufacturing the minimum viable product.
+      </p>
+      <p class = "description">This year, I began experimenting with personal projects. My friends and I had the crazy idea to get a high powered rocket with an H-Class Motor to get our level 1 certifications, but I took it one step further and designed a thrust vectoring control system. This system uses a gimbal to automatically control the direction of thrust rapidly based on gyroscope readings, as motors burn out within seconds. This was my first project involving a complex control system, and it inspired me to pursue controls and pay more attention in MAE 171A. Over the summer, I also became interested in rack-and-pinion steering mechanisms in vehicles, and in reading/writing literature. I'm currently drafting my own technical report on a 6-bar linkage satisfying the Ackermann steering criteria. Most recently, I've been studying the workings of cycloidal drives, as they are "eccentric" and have various applications in devices like massage guns, turbines, and even robotics.
+      </p>
+      <p class="description"> In my spare time, I enjoy tinkering with Arduino sets, building websites, and exploring the city with friends.</p>
+      <p class="description">In the future, I aim to pursue a career in mechatronics, which combines controls, mechanical design, and linkage design. I am fascinated by both traditional mechanisms and modern mechanisms, including soft actuators and compliant mechanisms. Ultimately, I want to design technology that truly makes life more convenient, not products that reinvent the wheel and markup the price. </p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  </body>
+</html>

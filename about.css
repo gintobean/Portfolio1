@@ -1,0 +1,40 @@
+.navi {
+  position: relative;
+}
+
+.about-container {
+  background-color: #f5f7f7;
+}
+
+.about-wrapper-top {
+  display: flex;
+  width: 100vw;
+  padding:2% 20% 0 20%;
+}
+
+.about-wrapper {
+  width: 100vw;
+  padding: 0 20% 2% 20%;
+}
+
+.about-words-top {
+  width: 60%;
+  padding: 0 10% 0 0;
+}
+
+.about-words {
+  padding: 0 10% 0 0;
+}
+
+.about-picture {
+  width: 40%;
+}
+
+.about-pic {
+  filter:grayscale(0.3);
+  border-left: black 20px solid;
+}
+
+.about-pic {
+  width: 100%;
+}
